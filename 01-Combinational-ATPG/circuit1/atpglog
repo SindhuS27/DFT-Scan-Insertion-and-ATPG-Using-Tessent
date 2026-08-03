@@ -1,0 +1,78 @@
+/home/MentorGraphics/tessent/bin/tessent -shell -dofile atpg.do -log atpglog -replace
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Thu Feb 05 14:55:03 IST 2026.
+//  64 bit version
+//  Host: ic312.vit.ac.in (31642 MB RAM, 65535 MB Swap)
+//
+//  command: set_context patterns -Scan
+//  command: read_verilog circuit2_1075.v -force
+//  command: set_current_design 
+//  Note: Top design is 'circuit2_1075'.
+//  command: set_system_mode analysis
+//  Flattening process completed, gates=13, PIs=7, POs=1, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 0.
+//  ---------------------------------------------------------------------------
+//  Circuit has no memory elements.
+//  command: set_fault_type stuck
+//  command: create_patterns 
+No faults in fault list. Adding all faults...
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                             Analyzing the design                                                   |
+// |                                                                                                                    |
+// |      Current clock restriction setting:     Domain_clock (edge interaction)                                        |
+// |                                             (optimal)                                                              |
+// |                                                                                                                    |
+// |            Current abort limit setting:     30                                                                     |
+// |                                Calling:     set_abort_limit 300 100                                                |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |               Current sequential depth:     0 (optimal)                                                            |
+// |                                                                                                                    |
+// | ------------------------------------------------------------------------------------------------------------------ |
+//  ------------------------------------------------------------------------
+//  Simulation performed for #gates = 13  #faults = 48
+//  system mode = analysis    pattern source = internal patterns
+//  ------------------------------------------------------------------------
+//  #patterns  test      #faults  #faults    # eff.    # test         process      RE/AU/AAB
+//  simulated  coverage  in list  detected   patterns  patterns       CPU time
+//   ---        ------      ---       ---      ---       ---          0.01 sec     0/0/0
+//   8         100.00%        0        48        8         8          0.01 sec
+
+           Statistics Report          
+            Stuck-at Faults           
+--------------------------------------
+Fault Classes              #faults    
+                           (total)    
+---------------------  ---------------
+  FU (full)                   48      
+  -------------------  ---------------
+  DS (det_simulation)     48 (100.00%)
+--------------------------------------
+Coverage                              
+  -------------------                 
+  test_coverage               100.00% 
+  fault_coverage              100.00% 
+  atpg_effectiveness          100.00% 
+--------------------------------------
+#test_patterns                      8 
+#simulated_patterns                 8 
+CPU_time (secs)                   4.0 
+--------------------------------------
+
+//  command: write_patterns testpatterns -replace
+//  command: write_faults faultlist
+//  Error: File faultlist already exists.
+// 'DOFile atpg.do' aborted at line 8
