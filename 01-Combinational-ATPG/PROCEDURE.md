@@ -48,25 +48,6 @@ Y
 
 The circuit is constructed using NAND, OR, and AND gates with intermediate nodes `G`, `F`, `H`, `I`, and `J`.
 
-### Logic Structure
-
-```text
-A ─────┐
-       NAND ── G ────────────────────┐
-B ─────┘                              │
-                                      │
-B ─────┐                              │
-       NAND ── F ──┐                  │
-C ─────┘           NAND ── H ──┐      │
-                   │            │      │
-D ─────────────────┘            OR ─ J ├── AND ── Y
-                                │      │
-D ─────┐                        │      │
-       NAND ── I ───────────────┘      │
-E ─────┘                               │
-                                       │
-                                       ┘
-```
 
 ### Verilog Implementation
 
@@ -92,6 +73,10 @@ endmodule
 
 ## Circuit 2
 
+
+<img width="365" height="215" alt="image" src="https://github.com/user-attachments/assets/ecf1216d-8ddb-4b51-b722-d1209f714942" />
+
+
 Circuit 2 consists of seven primary inputs:
 
 ```text
@@ -106,23 +91,7 @@ Y
 
 The design uses NAND, OR, and AND gates.
 
-### Logic Structure
 
-```text
-A ───┐
-B ───┼── NAND ── H ───────────────┐
-C ───┘                             │
-                                    │
-D ───┐                             │
-     OR ── I ──┐                   │
-E ───┘         │                   │
-               OR ── K ────────────┼── AND ── Y
-F ───┐         │                   │
-     AND ── J ─┘                   │
-G ───┘                             │
-                                    │
-                                    ┘
-```
 
 ### Verilog Implementation
 
