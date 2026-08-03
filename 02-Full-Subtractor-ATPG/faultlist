@@ -1,0 +1,75 @@
+FaultInformation {
+ version : 1;
+ FaultType (Stuck) {
+  FaultList {
+   FaultCollapsing : FALSE;
+   Format : Identifier, Class, Location;
+   Instance ("") {
+      0,  DS,        "/a";
+      1,  DS,        "/a";
+      0,  DS,        "/b";
+      1,  DS,        "/b";
+      0,  DS,        "/bin";
+      1,  DS,        "/bin";
+      0,  DS,        "/g1/OUT";
+      1,  DS,        "/g1/OUT";
+      0,  EQ,        "/g1/IN0";
+      0,  EQ,        "/g1/IN1";
+      1,  DS,        "/g1/IN0";
+      1,  DS,        "/g1/IN1";
+      0,  DS,        "/g3/OUT";
+      1,  DS,        "/g3/OUT";
+      0,  EQ,        "/g3/IN1";
+      0,  EQ,        "/g3/IN0";
+      1,  DS,        "/g3/IN1";
+      1,  DS,        "/g3/IN0";
+      1,  DS,        "/g4/OUT";
+      0,  EQ,        "/g4/IN0";
+      0,  EQ,        "/g4/IN1";
+      0,  EQ,        "/g2/OUT";
+      1,  DS,        "/g2/OUT";
+      0,  EQ,        "/g2/IN0";
+      0,  EQ,        "/g2/IN1";
+      1,  EQ,        "/g4/IN0";
+      1,  DS,        "/g2/IN0";
+      1,  DS,        "/g2/IN1";
+      0,  DS,        "/g4/OUT";
+      1,  DS,        "/g4/IN1";
+      0,  DS,        "/g5/OUT";
+      1,  DS,        "/g5/OUT";
+      0,  EQ,        "/g5/IN0";
+      0,  EQ,        "/g5/IN1";
+      1,  DS,        "/g5/IN0";
+      1,  DS,        "/g5/IN1";
+      0,  DS,        "/g7/OUT";
+      1,  DS,        "/g7/OUT";
+      0,  EQ,        "/g7/IN0";
+      0,  EQ,        "/g7/IN1";
+      1,  DS,        "/g7/IN0";
+      1,  DS,        "/g7/IN1";
+      1,  DS,        "/dout";
+      1,  EQ,        "/g8/OUT";
+      0,  EQ,        "/g8/IN1";
+      0,  EQ,        "/g8/IN0";
+      0,  EQ,        "/g6/OUT";
+      1,  DS,        "/g6/OUT";
+      0,  EQ,        "/g6/IN1";
+      0,  EQ,        "/g6/IN0";
+      1,  EQ,        "/g8/IN0";
+      1,  DS,        "/g6/IN1";
+      1,  DS,        "/g6/IN0";
+      0,  DS,        "/bout";
+      0,  EQ,        "/g9/OUT";
+      1,  DS,        "/bout";
+      1,  EQ,        "/g9/OUT";
+      0,  EQ,        "/g9/IN0";
+      0,  EQ,        "/g9/IN1";
+      1,  DS,        "/g9/IN0";
+      1,  DS,        "/g9/IN1";
+      0,  DS,        "/dout";
+      0,  EQ,        "/g8/OUT";
+      1,  DS,        "/g8/IN1";
+   }
+  }
+ }
+}
