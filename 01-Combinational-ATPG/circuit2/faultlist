@@ -1,0 +1,59 @@
+FaultInformation {
+ version : 1;
+ FaultType (Stuck) {
+  FaultList {
+   FaultCollapsing : FALSE;
+   Format : Identifier, Class, Location;
+   Instance ("") {
+      1,  DS,        "/g1/OUT";
+      0,  EQ,        "/g1/IN0";
+      0,  EQ,        "/g1/IN1";
+      0,  EQ,        "/g1/IN2";
+      0,  EQ,        "/A";
+      0,  EQ,        "/B";
+      0,  EQ,        "/C";
+      1,  EQ,        "/g5/IN0";
+      1,  DS,        "/A";
+      1,  EQ,        "/g1/IN0";
+      1,  DS,        "/B";
+      1,  EQ,        "/g1/IN1";
+      1,  DS,        "/C";
+      1,  EQ,        "/g1/IN2";
+      0,  DS,        "/D";
+      0,  EQ,        "/g2/IN0";
+      1,  DS,        "/g4/OUT";
+      1,  EQ,        "/g4/IN0";
+      1,  EQ,        "/g4/IN1";
+      1,  EQ,        "/g2/OUT";
+      1,  EQ,        "/g2/IN0";
+      1,  EQ,        "/g2/IN1";
+      1,  EQ,        "/g3/OUT";
+      1,  EQ,        "/D";
+      1,  EQ,        "/E";
+      1,  EQ,        "/g5/IN1";
+      0,  DS,        "/E";
+      0,  EQ,        "/g2/IN1";
+      0,  DS,        "/g3/OUT";
+      0,  EQ,        "/g3/IN0";
+      0,  EQ,        "/g3/IN1";
+      0,  EQ,        "/F";
+      0,  EQ,        "/G";
+      0,  EQ,        "/g4/IN1";
+      1,  DS,        "/F";
+      1,  EQ,        "/g3/IN0";
+      1,  DS,        "/G";
+      1,  EQ,        "/g3/IN1";
+      0,  DS,        "/Y";
+      0,  EQ,        "/g5/OUT";
+      0,  EQ,        "/g5/IN0";
+      0,  EQ,        "/g5/IN1";
+      0,  EQ,        "/g1/OUT";
+      0,  EQ,        "/g4/OUT";
+      0,  DS,        "/g2/OUT";
+      0,  EQ,        "/g4/IN0";
+      1,  DS,        "/Y";
+      1,  EQ,        "/g5/OUT";
+   }
+  }
+ }
+}

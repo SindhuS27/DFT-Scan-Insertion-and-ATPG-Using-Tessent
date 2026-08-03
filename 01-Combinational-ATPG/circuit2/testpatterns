@@ -1,0 +1,72 @@
+//
+//  Tessent Shell  2022.4
+//
+//  Design  = circuit2_1075.v
+//  Created = Thu Feb 05 14:57:09 IST 2026
+//
+//  Statistics:
+//      Test Coverage   =  100.00%
+//      Total Faults    =  48
+//          DS (det_simulation)    =  48
+//      Total            Patterns  =  8
+//
+//  Settings:
+//      Simulation Mode =  combinational, seq_depth = 0
+//      Fault Type      =  stuck
+//      Fault Mode      =  uncollapsed
+//      Pos_Det Credit  =  50%
+//      Z external      =  X
+//      Z internal      =  X
+//      wired_net       =  WIRE
+//
+//  Warnings:
+//
+
+ASCII_PATTERN_FILE_VERSION = 3;
+
+
+SETUP = 
+
+    declare input bus "PI" = "/A", "/B", "/C", "/D", "/E",
+         "/F", "/G";
+
+    declare output bus "PO" = "/Y";
+
+end;
+
+SCAN_TEST =
+
+    pattern = 0;
+    force   "PI" "0111000" 0;
+    measure "PO" "1" 1;
+
+    pattern = 1;
+    force   "PI" "1011110" 0;
+    measure "PO" "1" 1;
+
+    pattern = 2;
+    force   "PI" "1101000" 0;
+    measure "PO" "1" 1;
+
+    pattern = 3;
+    force   "PI" "0010010" 0;
+    measure "PO" "0" 1;
+
+    pattern = 4;
+    force   "PI" "1000100" 0;
+    measure "PO" "1" 1;
+
+    pattern = 5;
+    force   "PI" "0000001" 0;
+    measure "PO" "0" 1;
+
+    pattern = 6;
+    force   "PI" "1111111" 0;
+    measure "PO" "0" 1;
+
+    pattern = 7;
+    force   "PI" "0010011" 0;
+    measure "PO" "1" 1;
+
+end;
+
